@@ -24,7 +24,12 @@ pipeline {
                 sh """
                     echo "Here I wrote shell script"
                     echo "$GREETING"
+                """
+            }
+        }
+    }
     // post build
+    
     post {
         always {
             echo 'I will always say Hello again'
